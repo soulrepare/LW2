@@ -1,0 +1,17 @@
+{
+  "name": "furnishop",
+  "version": "2.0.0",
+  "description": "FurniShop – Creative Home, Simplified Furniture. Lab 2: npm, Sass, Node.js.",
+  "main": "index.html",
+  "scripts": {
+    "scss:build": "sass src/scss/main.scss css/style.css --no-source-map --style=compressed",
+    "scss:watch": "sass --watch src/scss/main.scss:css/style.css",
+    "build:cards": "node scripts/build-cards.js",
+    "build": "npm run build:cards && npm run scss:build"
+  },
+  "author": "Терпак",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}

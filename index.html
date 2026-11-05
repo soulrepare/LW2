@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FurniShop – Creative Home, Simplified Furniture</title>
+  <meta name="description" content="FurniShop: furniture for a creative home. Chairs, beds, cupboards and lighting at promo prices.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Raleway:wght@500;700&family=Saira:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!--  HEADER (Flexbox #1)  -->
+  <header class="site-header">
+    <div class="container container--header site-header__inner">
+      <a class="logo" href="#top">FurniShop</a>
+
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle menu">
+      <label class="nav-burger" for="nav-toggle">
+        <span class="visually-hidden">Menu</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M3 6h18M7 12h14M3 18h18"/>
+        </svg>
+      </label>
+
+      <nav class="main-nav" aria-label="Main">
+        <ul class="main-nav__list">
+          <li><a class="main-nav__link main-nav__link--active" href="#top" aria-current="page">Home</a></li>
+          <li><a class="main-nav__link" href="#about">About</a></li>
+          <li><a class="main-nav__link" href="#features">Features</a></li>
+          <li><a class="main-nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!--  HERO (Flexbox #2) + STATS  -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg">
+        <img class="hero__img" src="img/hero.jpg" width="2000" height="1497"
+             alt="Bright living room with a yellow sofa, a floor lamp and a green plant">
+        <span class="hero__fade"></span>
+      </div>
+
+      <span class="hero__pin hero__pin--1" aria-hidden="true"></span>
+      <span class="hero__pin hero__pin--2" aria-hidden="true"></span>
+      <span class="hero__pin hero__pin--3" aria-hidden="true"></span>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">Creative Home Simplify your Furniture</h1>
+          <p class="hero__text">Discover thoughtfully designed furniture that makes every room of your home calmer, brighter and easier to live in.</p>
+          <a class="btn-glass" href="#products">Shop Now</a>
+        </div>
+
+        <section class="stats" aria-labelledby="stats-title">
+          <h2 class="visually-hidden" id="stats-title">FurniShop in numbers</h2>
+          <ul class="stats__list">
+            <li class="stats__item"><span class="stats__value">7</span><span class="stats__label">Year Experience</span></li>
+            <li class="stats__item"><span class="stats__value">2</span><span class="stats__label">Opened in the country</span></li>
+            <li class="stats__item"><span class="stats__value">10k+</span><span class="stats__label">Furniture sold</span></li>
+            <li class="stats__item"><span class="stats__value">260+</span><span class="stats__label">Variant Furniture</span></li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <!-- FEATURES / WE CREATE (Flexbox #3)  -->
+    <section class="features section" id="features" aria-labelledby="features-title">
+      <div class="container features__inner">
+        <div class="features__text">
+          <h2 class="section-title" id="features-title">We Create your home more aesthetic</h2>
+          <p class="lead">We design and deliver furniture that turns an ordinary house into a stylish home.</p>
+          <ul class="features__list">
+            <li class="feature">
+              <svg class="feature__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="16" cy="16" r="12.5"/><path d="M10.5 16.5l4 4 7-8"/>
+              </svg>
+              <h3 class="feature__title">Valuation Services</h3>
+              <p class="feature__text">Free consultation and a detailed estimate for every project before you order.</p>
+            </li>
+            <li class="feature">
+              <svg class="feature__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="16" cy="16" r="12.5"/><path d="M10.5 16.5l4 4 7-8"/>
+              </svg>
+              <h3 class="feature__title">Development of Furniture Models</h3>
+              <p class="feature__text">Our designers create new models every season for every style and budget.</p>
+            </li>
+          </ul>
+        </div>
+        <figure class="features__media media-frame">
+          <img src="img/cat-chair.jpg" width="640" height="960" loading="lazy"
+               alt="Grey sofa with a wooden coffee table on a soft rug">
+        </figure>
+      </div>
+    </section>
+
+    <!--  NEW IN STORE (horizontal category track) -->
+    <section class="categories section" id="about" aria-labelledby="categories-title">
+      <div class="container categories__inner">
+        <div class="categories__intro">
+          <h2 class="section-title" id="categories-title">New In Store Now</h2>
+          <p class="categories__text">Get the latest items immediately with promo prices</p>
+          <a class="link-arrow" href="#products">
+            Check All
+            <svg width="20" height="10" viewBox="0 0 20 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 5h18M15 1l4 4-4 4"/></svg>
+          </a>
+        </div>
+
+        <ul class="categories__track">
+          <li class="category-card">
+            <img src="img/cat-chair.jpg" width="640" height="960" loading="lazy" alt="Grey sofa and a wooden table with hairpin legs">
+            <h3 class="category-card__title">Chair</h3>
+          </li>
+          <li class="category-card">
+            <img src="img/cat-bed.jpg" width="640" height="960" loading="lazy" alt="Wooden bed with a soft blanket and terracotta pillows">
+            <h3 class="category-card__title">Bed</h3>
+          </li>
+          <li class="category-card">
+            <img src="img/cat-cupboard.jpg" width="640" height="960" loading="lazy" alt="Wall-mounted wooden cupboard against a pink wall">
+            <h3 class="category-card__title">Cupboard</h3>
+          </li>
+          <li class="category-card">
+            <img src="img/cat-lighting.jpg" width="640" height="960" loading="lazy" alt="Cluster of copper pendant lamps">
+            <h3 class="category-card__title">Lighting</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--  BEST MANUFACTURER  -->
+    <section class="manufacturer section" aria-labelledby="manufacturer-title">
+      <div class="container manufacturer__inner">
+        <div class="manufacturer__text">
+          <h2 class="section-title" id="manufacturer-title">The Best Furniture Manufacturer of your choice</h2>
+          <p class="lead">FurniShop works with trusted workshops to produce solid, long-lasting furniture. Every piece is made from responsibly sourced materials, checked by hand, delivered right to your door and assembled for you in most cities.</p>
+        </div>
+        <figure class="manufacturer__media media-frame">
+          <img src="img/manufacturer.jpg" width="1200" height="800" loading="lazy"
+               alt="Modern kitchen with a white island, wooden bar stools and black pendant lamps">
+        </figure>
+      </div>
+    </section>
+
+    <!--  ALL PRODUCTS (CSS Grid #1, Flexbox #4 inside cards)  -->
+    <section class="products section" id="products" aria-labelledby="products-title">
+      <div class="container">
+        <header class="products__head">
+          <h2 class="section-title" id="products-title">All Product</h2>
+          <p class="products__text">The products we provide only for you as our service are selected from the best products with number 1 quality in the world</p>
+        </header>
+
+        <div class="products__grid">
+        <!-- cards:start -->
+        <!-- cards:end -->
+        </div>
+
+        <nav class="pagination" aria-label="Product pages">
+          <button class="round-btn" type="button" aria-label="Previous page">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          </button>
+          <ul class="pagination__dots">
+            <li class="pagination__dot pagination__dot--active"><span class="visually-hidden">Page 1 (current)</span></li>
+            <li class="pagination__dot"><span class="visually-hidden">Page 2</span></li>
+            <li class="pagination__dot"><span class="visually-hidden">Page 3</span></li>
+            <li class="pagination__dot"><span class="visually-hidden">Page 4</span></li>
+            <li class="pagination__dot"><span class="visually-hidden">Page 5</span></li>
+          </ul>
+          <button class="round-btn" type="button" aria-label="Next page">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </nav>
+      </div>
+    </section>
+
+    <!--  TESTIMONIAL (grid-template-areas)  -->
+    <section class="testimonial section" aria-labelledby="testimonial-title">
+      <div class="container testimonial__inner">
+        <h2 class="section-title testimonial__title" id="testimonial-title">What people are saying about us</h2>
+
+        <figure class="testimonial__quote">
+          <figcaption class="author">
+            <img class="author__photo" src="img/avatar.jpg" width="200" height="300" loading="lazy" alt="Portrait of Josh Smith">
+            <span class="author__info">
+              <span class="author__name">Josh Smith</span>
+              <span class="author__role">Manager of The New York Times</span>
+            </span>
+          </figcaption>
+          <blockquote class="testimonial__text">
+            <p>“They have a perfect touch for making something so professional, interesting and useful for a lot of people.”</p>
+          </blockquote>
+        </figure>
+
+        <div class="testimonial__media media-frame">
+          <img src="img/testimonial.jpg" width="1064" height="599" loading="lazy"
+               alt="Bright living room with a beige corner sofa, a round table and large windows">
+        </div>
+
+        <div class="testimonial__controls">
+          <button class="round-btn" type="button" aria-label="Previous testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          </button>
+          <button class="round-btn round-btn--accent" type="button" aria-label="Next testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--  CTA / SUBSCRIBE  -->
+    <section class="cta" id="contact" aria-labelledby="cta-title">
+      <div class="cta__bg"><img src="img/cta-bg.jpg" width="2000" height="1333" loading="lazy" alt=""></div>
+      <div class="container cta__inner">
+        <div class="cta__box">
+          <h2 class="cta__title" id="cta-title">Get more discount<br>Off your order</h2>
+          <p class="cta__text">Join our mailing list</p>
+          <form class="cta__form" action="#" method="post">
+            <label class="visually-hidden" for="cta-email">Your email address</label>
+            <input class="cta__input" id="cta-email" name="email" type="email" placeholder="Your email address" autocomplete="email" required>
+            <button class="btn-dark" type="submit">Shop Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--  FOOTER (CSS Grid #2, Flexbox #5)  -->
+  <footer class="site-footer">
+    <div class="container container--footer">
+      <div class="site-footer__top">
+        <a class="site-footer__brand" href="#top">FurniShop</a>
+        <ul class="socials">
+          <li><a class="socials__link" href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a class="socials__link" href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li><a class="socials__link" href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a class="socials__link" href="#" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+          <li><a class="socials__link" href="#" aria-label="Instagram (second profile)"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+      <nav class="site-footer__cols" aria-label="Footer">
+        <div class="footer-col">
+          <h2 class="footer-col__title">Our Products</h2>
+          <ul class="footer-col__list">
+            <li><a href="#">The Support Suite</a></li>
+            <li><a href="#">The Sales Suite</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-col__title">Top Features</h2>
+          <ul class="footer-col__list">
+            <li><a href="#">Ticketing System</a></li>
+            <li><a href="#">Knowledge Base</a></li>
+            <li><a href="#">Community Forums</a></li>
+            <li><a href="#">Help Desk Software</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-col__title">Resources</h2>
+          <ul class="footer-col__list">
+            <li><a href="#">Product Support</a></li>
+            <li><a href="#">Request Demo</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Peoplepower Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-col__title">Company</h2>
+          <ul class="footer-col__list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-col__title">Favourite Things</h2>
+          <ul class="footer-col__list">
+            <li><a href="#">For Enterprise</a></li>
+            <li><a href="#">For Startups</a></li>
+            <li><a href="#">For Benchmark</a></li>
+            <li><a href="#">For Small Business</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="site-footer__bottom">
+      <p class="site-footer__copy">© NEVERMIND 2026 - All Rights Reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>

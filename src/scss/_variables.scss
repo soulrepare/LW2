@@ -1,0 +1,65 @@
+// ==========================================================================
+// _variables.scss — Design tokens & SCSS variables / mixins
+// ==========================================================================
+
+// ── Colours ──────────────────────────────────────────────────────────────
+$color-accent:           #7A5C8E;
+$color-text:             #23262f;
+$color-text-inverse:     #ffffff;
+$color-surface:          #ffffff;
+$color-surface-inverse:  #23262f;
+$color-surface-muted:    #eaeef3;
+$color-glass:            rgb(226 226 226 / 0.4);
+$color-card-border:      rgb(16 38 55 / 0.1);
+$color-control-bg:       #d9d9d9;
+$color-social-bg:        rgb(122 92 142 / 0.1);
+$color-pin-fill:         rgb(217 217 217 / 0.2);
+$color-pin-line:         #d9d9d9;
+$color-focus:            #f2a900;
+
+// ── Fonts ────────────────────────────────────────────────────────────────
+$font-main:          "Saira", system-ui, sans-serif;
+$font-footer-title:  "Raleway", system-ui, sans-serif;
+$font-footer-text:   "Inter", system-ui, sans-serif;
+
+// ── Font-size fluid scale ────────────────────────────────────────────────
+$fs-display:    clamp(1.5rem, 0.571rem + 3.81vw, 4rem);
+$fs-heading:    clamp(1.5rem, 1.129rem + 1.524vw, 2.5rem);
+$fs-subheading: clamp(1rem, 0.814rem + 0.762vw, 1.5rem);
+$fs-category:   clamp(1.125rem, 0.893rem + 0.952vw, 1.75rem);
+$fs-lead:       clamp(0.875rem, 0.736rem + 0.571vw, 1.25rem);
+$fs-item-title: clamp(1rem, 0.907rem + 0.381vw, 1.25rem);
+$fs-body:       clamp(0.875rem, 0.829rem + 0.19vw, 1rem);
+$fs-price:      clamp(0.75rem, 0.657rem + 0.381vw, 1rem);
+$fs-price-old:  clamp(0.625rem, 0.532rem + 0.381vw, 0.875rem);
+
+// ── Radii ────────────────────────────────────────────────────────────────
+$radius-xs:    0.3125rem;
+$radius-sm:    0.375rem;
+$radius-md:    0.5rem;
+$radius-btn:   0.625rem;
+$radius-card:  1rem;
+$radius-lg:    1.25rem;
+$radius-round: 50%;
+
+// ── Layout ───────────────────────────────────────────────────────────────
+$container-max: 90rem;
+$gutter:        clamp(1.5625rem, -0.1786rem + 7.143vw, 6.25rem);
+$space-section: clamp(3.125rem, 2.66rem + 1.905vw, 4.375rem);
+
+// ── Product grid defaults ────────────────────────────────────────────────
+$products-cols:     2;
+$products-col-gap:  1.25rem;
+$products-row-gap:  1.5625rem;
+
+// ── Category card ────────────────────────────────────────────────────────
+$category-w: 12.375rem;
+
+// ==========================================================================
+// Mixin: media breakpoint (min-width)
+// ==========================================================================
+@mixin breakpoint($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
